@@ -11,11 +11,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
+        this.contacts = [
+            { name: 'Zubin', contactNo: '123457', address: "Africa" },
+            { name: 'Micheal Clark', contactNo: '123456', address: "Australia" },
+            { name: 'James Bond', contactNo: '12345', address: "USA" },
+            { name: 'Steve Jobs', contactNo: '123457', address: "Africa" }
+        ];
     }
     AppComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            template: '<h1>My First Angular App</h1>'
+            selector: 'my-contacts',
+            templateUrl: 'app/contacts.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
